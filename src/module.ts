@@ -293,7 +293,7 @@ const nuxtModule = defineNuxtModule<ModuleOptions>({
 
 export default nuxtModule
 
-declare module 'nuxt/schema' {
+declare module '@nuxt/schema' {
   interface NuxtConfig {
     ['edgeDb']?: typeof nuxtModule extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
   }
